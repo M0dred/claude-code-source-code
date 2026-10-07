@@ -1,14 +1,14 @@
 {
   "name": "@anthropic-ai/claude-code-source",
   "version": "2.1.88",
-  "description": "Claude Code v2.1.88 \u2014 decompiled source for research",
+  "description": "Claude Code v2.1.88 — decompiled source for research",
   "type": "module",
   "private": true,
   "scripts": {
     "prepare-src": "node scripts/prepare-src.mjs",
-    "build": "node api.js && npm run prepare-src && node scripts/build.mjs",
+    "build": "npm run prepare-src && node scripts/build.mjs",
     "check": "npm run prepare-src && tsc --noEmit",
-    "start": "node api.js && node dist/cli.js"
+    "start": "node dist/cli.js"
   },
   "engines": {
     "node": ">=18.0.0"
